@@ -11,10 +11,10 @@
 
 -- General UI settings
 vim.opt.number = true -- Show line numbers
-vim.opt.relativenumber = true -- Show relative line number
+vim.opt.relativenumber = true -- Show relative line numbers
 vim.opt.wrap = false -- Disable line wrapping
 vim.opt.scrolloff = 8 -- Keep 8 lines above/below the cursor
-vim.opt.termguicolors = true -- Enable 24-bit color sadf asdas fsadfasdf sadfds asdfsd asdf sdfsadf asfasd fasf
+vim.opt.termguicolors = true -- Enable 24-bit color
 
 -- Persistent undo
 vim.opt.undofile = true
@@ -24,5 +24,5 @@ vim.g.autoformat = true -- turn on format-on-save
 
 -- Languages
 vim.g.lazyvim_cmp = "nvim-cmp"
---vim.g.lazyvim_python_lsp = "basedpyright"
+vim.g.lazyvim_python_lsp = "basedpyright"
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })

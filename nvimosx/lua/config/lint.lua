@@ -1,3 +1,3 @@
 return {
-  python = { "ruff" },
+  python = { "flake8" },
 }

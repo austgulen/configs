@@ -1,4 +1,3 @@
--- lua/config/conform.lua
 return {
   "stevearc/conform.nvim",
   opts = {
@@ -12,7 +11,17 @@ return {
 
       -- Programming languages
       lua = { "stylua" },
-      python = { "isort", "black" },
+      -- python = { "ruff" },
+      python = {
+        --   -- To fix auto-fixable lint errors.
+        -- "ruff_fix",
+        --   -- To run the Ruff formatter.
+        "ruff_format",
+
+        --   -- To organize the imports.
+        "ruff_organize_imports",
+      },
+      --python = { "ruff" },
       javascript = { "prettierd" },
       typescript = { "prettierd" },
       go = { "gofmt" },
@@ -20,9 +29,21 @@ return {
       sh = { "shfmt" },
 
       -- add more as desired…
+      -- formatters = {
+      --   ruff = {
+      --     prepend_args = { "--line-length", "100" },
+      --   },
+      -- },
     },
+    -- format_on_save = {
+    --   lsp_fallback = true,
+    -- },
+    -- formatters = {
+    --   ruff_format = {
+    --     args = { "--line-length=100" },
+    --   },
+    -- },
 
-    -- ✨ Optional extras:
     -- formatter_opts = {
     --   prettier = { cli_args = { "--single-quote", "--prose-wrap=never" } },
     --   black    = { cli_args = { "--fast" } },

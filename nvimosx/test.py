@@ -1,14 +1,12 @@
-import math
-
-s = math.sin(1)
-print(s.conjugate.as)
+import datetime
+from collections import deque
 
 
-def foo(x: int):
-    """[TODO:description].
+def foo(x):
+    """[TODO:description]
 
     Args:
-        x: [TODO:description]
+        x ([TODO:parameter]): [TODO:description]
 
     Returns:
         [TODO:return]
@@ -16,14 +14,9 @@ def foo(x: int):
     return x - 1
 
 
-a = (1, 2, 3, 'a')  # aslkaslkajsdlaksjdalksdjalksdjlakjalkjlaksjdskdjfaksjfhaskjhasdlkfjasaaashahhh
-
-
-if (
-    __name__ == '__main__'
-):  # aksijdak sdlkajs lkajsldka sldkas jldkaj dlaksjdlakssasas ssdasdsasddaa
-    print(
-        'A',
-        'B',
-    )  # kasdjfkjsdhaksjdfhaskjfdhaksdjfhaksjdfh aksjdhfkjasdhfkjs)  # s ksdjah  kshaksjdh fakljdhf akljsdfh alskjdhsdkjhsdfkjhdfkjh sk jkksjdhfajs
-    # hfkjahsdkf j aklsjfha dklfj halskdfjha dkljf haskdjlfha dskfjh
+if __name__ == "__main__":
+    print("A")
+    b = foo(1)
+    c = foo(10)
+    d = c + b
+    print(foo(1))
