@@ -1,4 +1,3 @@
--- lua/config/conform.lua
 return {
   "stevearc/conform.nvim",
   opts = {
@@ -36,7 +35,15 @@ return {
       --   },
       -- },
     },
-    -- ✨ Optional extras:
+    -- format_on_save = {
+    --   lsp_fallback = true,
+    -- },
+    -- formatters = {
+    --   ruff_format = {
+    --     args = { "--line-length=100" },
+    --   },
+    -- },
+
     -- formatter_opts = {
     --   prettier = { cli_args = { "--single-quote", "--prose-wrap=never" } },
     --   black    = { cli_args = { "--fast" } },

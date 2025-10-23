@@ -6,14 +6,9 @@ return {
         -- https://docs.astral.sh/ruff/editors/settings/
         init_options = {
           settings = {
-            lineLength = 100,
-            logLevel = "info",
-            lint = {
-              enable = true,
-            },
-            format = {
-              preview = true,
-            },
+            -- https://docs.astral.sh/ruff/configuration/
+            configuration = "~/.config/ruff/ruff.toml",
+            -- logLevel = "debug",
           },
         },
       },

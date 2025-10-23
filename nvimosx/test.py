@@ -1,8 +1,14 @@
+import math
+
+s = math.sin(1)
+print(s.conjugate.as)
+
+
 def foo(x: int):
-    """[TODO:description]
+    """[TODO:description].
 
     Args:
-        x ([TODO:parameter]): [TODO:description]
+        x: [TODO:description]
 
     Returns:
         [TODO:return]
@@ -10,18 +16,14 @@ def foo(x: int):
     return x - 1
 
 
-a = (
-    1,
-    2,
-    3,
-)  # aslkaslkajsdlaksjdalksdjalksdjlakjalkjlaksjdskdjfaksjfhaskjhasdlkfjasaaa
+a = (1, 2, 3, 'a')  # aslkaslkajsdlaksjdalksdjalksdjlakjalkjlaksjdskdjfaksjfhaskjhasdlkfjasaaashahhh
 
 
 if (
-    __name__ == "__main__"
-):  # aksijdak sdlkajs lkajsldka sldkas jldkaj dlaksjdlaks djalks djalskj dalksj dlaksj dlask
+    __name__ == '__main__'
+):  # aksijdak sdlkajs lkajsldka sldkas jldkaj dlaksjdlakssasas ssdasdsasddaa
     print(
-        "A",
-        "B",
+        'A',
+        'B',
     )  # kasdjfkjsdhaksjdfhaskjfdhaksdjfhaksjdfh aksjdhfkjasdhfkjs)  # s ksdjah  kshaksjdh fakljdhf akljsdfh alskjdhsdkjhsdfkjhdfkjh sk jkksjdhfajs
     # hfkjahsdkf j aklsjfha dklfj halskdfjha dkljf haskdjlfha dskfjh
