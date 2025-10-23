@@ -1,0 +1,25 @@
+# Check :
+# https://docs.astral.sh/ruff/configuration/
+# For refrance!
+line-length = 100
+indent-width = 4
+
+
+# https://docs.astral.sh/ruff/rules/
+# https://docs.astral.sh/ruff/settings/#lint
+[lint]
+select = ["E", "W", "F", "I", "D"]  # Include errors (E), warnings (W), flake8 rules (F), isort (I), pydocstyle(D)
+ignore = []  # Optionally ignore specific rules, e.g., ["E501"] to ignore line length
+
+[lint.pydocstyle]
+convention = "google" # Accepts: "google", "numpy", or "pep257".
+
+
+[format]
+quote-style = "double"  # Your formatting setting
+indent-style = "space"
+docstring-code-format = true
+# preview = true
+#
+# [analyze]
+# detect-string-imports = true
