@@ -24,5 +24,5 @@ vim.g.autoformat = true -- turn on format-on-save
 
 -- Languages
 vim.g.lazyvim_cmp = "nvim-cmp"
---vim.g.lazyvim_python_lsp = "basedpyright"
+vim.g.lazyvim_python_lsp = "basedpyright"
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })

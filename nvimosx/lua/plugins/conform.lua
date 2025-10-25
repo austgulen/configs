@@ -1,6 +1,7 @@
 return {
   "stevearc/conform.nvim",
   opts = {
+    exclude = { "csv" },
     formatters_by_ft = {
       -- Markdown & MDX
       markdown = { "prettierd" },
@@ -8,6 +9,8 @@ return {
 
       -- TeX
       tex = { "latexindent" },
+
+      toml = { "taplo" },
 
       -- Programming languages
       lua = { "stylua" },
