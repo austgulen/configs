@@ -1,0 +1,8 @@
+[keybindings]
+#controlls
+"Space" = "playpause"
+"Ctrl+Left" = "seek -5s"
+"Ctrl+Right" = "seek +5s"
+# volume
+"Ctrl+Up" = "volup 5"
+"Ctrl+Down" = "voldown 5" 
