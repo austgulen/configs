@@ -18,6 +18,12 @@ return {
     priority = 1000,
   },
   {
+    "loctvl842/monokai-pro.nvim",
+    lazy = true,
+    priority = 1000,
+  },
+
+  {
     "kepano/flexoki-neovim",
     lazy = true,
     priority = 1000,
