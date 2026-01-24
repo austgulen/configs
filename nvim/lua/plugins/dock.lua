@@ -16,6 +16,7 @@ return {
   ,;//'         M     YMM YM.    , YA.   ,A9   VVV      MM    MM    MM    MM  
 ,//'          .JML.    YM  `Mbmmd'  `Ybmd9'     W     .JMML..JMML  JMML  JMML.
 ]],
+        -- vim.api.nvim_set_hl(0, "SnacksDashboardHeader", { fg = "#ff0086" }),
         -- stylua: ignore
         ---@type snacks.dashboard.Item[]
         keys = {

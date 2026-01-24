@@ -1,24 +1,27 @@
-from argparse import ArgumentTypeError
+import math
 
-import debugpy
+import numpy as np
+import torch.nn
+
+s = math.sin(1)
+p = math.cos(s)
+t = torch.tensor(1)
 
 
 def foo(x: int):
-    """[TODO:description]
+    """[TODO:description].
 
     Args:
-        x ([TODO:parameter]): [TODO:description]
+        x: [TODO:description]
 
     Returns:
         [TODO:return]
     """
-    return x - 1
+    y = np.random.randint(5)
+    return x - y
 
 
-if __name__ == "__main__":
-    print("A")
-    print(hello)
-    b = foo(1)
-    c = foo(10)
-    d = c + b
-    prinat(foo(1))
+
+
+
+if __name__ == '__main__':  # aksijdak sdlkajs lkajsldka sldkas jldkaj dlaksjdlakssasas ssdasdsasddaa
