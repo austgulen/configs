@@ -11,10 +11,11 @@
 
 -- General UI settings
 vim.opt.number = true -- Show line numbers
-vim.opt.relativenumber = true -- Show relative line numbers
+vim.opt.relativenumber = true -- Show relative line number
 vim.opt.wrap = false -- Disable line wrapping
 vim.opt.scrolloff = 8 -- Keep 8 lines above/below the cursor
-vim.opt.termguicolors = true -- Enable 24-bit color
+vim.opt.termguicolors = true -- Enable 24-bit color sadf asdas fsadfasdf sadfds asdfsd asdf sdfsadf asfasd fasf
+vim.o.winborder = "rounded" -- or 'single', 'double', 'solid'
 
 -- Persistent undo
 vim.opt.undofile = true
@@ -25,4 +26,14 @@ vim.g.autoformat = true -- turn on format-on-save
 -- Languages
 vim.g.lazyvim_cmp = "nvim-cmp"
 vim.g.lazyvim_python_lsp = "basedpyright"
-vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
+-- vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
+vim.keymap.set("n", "K", function()
+  vim.lsp.buf.hover({ border = "rounded", max_height = 25, max_width = 120 }) -- Change "single" to your desired border style
+end, { desc = "Hover documentation" })
+vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#589ed7", bg = "none" })
+
+vim.g.root_spec = {
+  "lsp", -- Use the LSP server's root detection first (basedpyright will look for its config files)
+  { ".git", "pyproject.toml", "pyrightconfig.json", ".env" }, -- Add specific file patterns
+  "cwd", -- Fallback to the current working directory
+}

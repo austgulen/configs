@@ -1,63 +1,72 @@
 return {
-  {
-    "neovim/nvim-lspconfig",
-    opts = {
-      servers = {
-        -- BasedPyright: Global defaults (overridden by pyproject.toml)
-        basedpyright = {
+  "neovim/nvim-lspconfig",
+  opts = {
+    servers = {
+      ruff = {
+        -- https://docs.astral.sh/ruff/editors/settings/
+        init_options = {
           settings = {
-            basedpyright = { -- Root key for BasedPyright (not "python")
-              analysis = {
-                -- ---- Speed & Scope ─────
-                diagnosticMode = "openFilesOnly", -- Only current file (fast)
-                typeCheckingMode = "basic", -- Basic errors only
-                useLibraryCodeForTypes = false, -- Skip library analysis
-                autoSearchPaths = false, -- No auto-dir scanning
-                extraPaths = { "src" }, -- Default source dirs (adjust globally)
-
-                -- ---- Features ─────
-                disableOrganizeImports = true, -- Use Ruff for imports
-
-                -- ---- Diagnostic Overrides (global fallbacks) ─────
-                diagnosticSeverityOverrides = {
-                  reportUnknownVariableType = "none",
-                  reportUnknownParameterType = "none",
-                  reportMissingTypeAnnotation = "none",
-                  reportGeneralTypeIssues = "none",
-                  reportMissingTypeStubs = "none",
-                  reportUnusedImport = "info", -- Keep as warning
-                },
-              },
-              configurationPreference = "preferConfigFiles", -- Prioritize pyproject.toml
-            },
-          },
-        },
-
-        -- Ruff: Keep your fast linting (minimal rules)
-        ruff = {
-          init_options = {
-            settings = {
-              lint = {
-                select = { "E4", "E7", "E9" },
-                ignore = { "F" }, -- Let BasedPyright handle pyflakes
-              },
-              configurationPreference = "editorFirst", -- Use your global ruff.toml
-            },
+            -- https://docs.astral.sh/ruff/configuration/
+            configuration = "~/.config/ruff/ruff.toml",
+            -- logLevel = "debug",
           },
         },
       },
-    },
-  },
+      -- https://docs.basedpyright.com/latest/
+      basedpyright = {
+        settings = {
+          basedpyright = {
+            analysis = {
+              -- ---- Speed & Scope ─────
+              diagnosticMode = "openFilesOnly", -- Only current file (fast)
+              typeCheckingMode = "basic", -- Basic errors only
+              -- useLibraryCodeForTypes = false, -- Skip library analysis
+              autoSearchPaths = false, -- No auto-dir scanning
+              -- extraPaths = { "src" }, -- Default source dirs (adjust globally)
 
-  -- Ensure Ruff formatting uses global config (avoids local overrides)
-  {
-    "stevearc/conform.nvim",
-    opts = {
-      formatters = {
-        ruff_format = {
-          extra_args = { "--config", "/Users/a.austgulen/.config/ruff/ruff.toml" },
+              -- ---- Features ─────
+              disableOrganizeImports = true, -- Use Ruff for imports
+
+              -- ---- Diagnostic Overrides (global fallbacks) ─────
+              diagnosticSeverityOverrides = {
+                reportUnknownVariableType = "none",
+                reportUnknownParameterType = "none",
+                reportMissingTypeAnnotation = "none",
+                reportGeneralTypeIssues = "none",
+                reportMissingTypeStubs = "none",
+                reportUnusedImport = "info", -- Keep as warning
+              },
+            },
+            configurationPreference = "preferConfigFiles", -- Prioritize pyproject.toml
+          },
         },
       },
+
+      -- basedpyright = {
+      --   settings = {
+      --     basedpyright = {
+      --       analysis = {
+      --         typeCheckingMode = "basic", -- Less strict, fewer diagnostics
+      --         diagnosticMode = "openFilesOnly", -- Faster, less verbose
+      --         -- useLibraryCodeForTypes = false, -- Faster for simple projects
+      --         autoSearchPaths = true, -- Adjust based on project size
+      --         disableOrganizeImports = true, -- Let Ruff handle imports
+      --         diagnosticSeverityOverrides = {
+      --           reportUnusedImport = "warning", -- Less intrusive
+      --           -- reportGeneralTypeIssues = "warning", -- Downgrade type issues
+      --           -- Remove annoying warnings:
+      --           reportMissingTypeAnnotation = "none",
+      --           reportMissingParameterType = "none",
+      --           reportUnknownVariableType = "none",
+      --           reportUnknownParameterType = "hint",
+      --           reportGeneralTypeIssues = "none", -- New: Skip general type issues
+      --           reportMissingTypeStubs = "none", -- New: Skip missing stub warnings
+      --           reportOptionalMemberAccess = "none",
+      --         },
+      --       },
+      --     },
+      --   },
+      -- },
     },
   },
 }
