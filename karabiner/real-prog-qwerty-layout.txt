@@ -1,0 +1,187 @@
+================================================================================
+                    REAL PROGRAMMER'S QWERTY LAYOUT
+                      for Kinesis Advantage 2
+================================================================================
+
+MAIN KEYBOARD LAYOUT
+────────────────────────────────────────────────────────────────────────────
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                          NUMBER ROW (Top Row)                           │
+└─────────────────────────────────────────────────────────────────────────┘
+
+    Normal Press (no Shift):
+    ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+    │ `  │ *  │ [  │ {  │ (  │ #  │ ^  │ )  │ }  │ ]  │ $  │ -  │ =  │
+    │ ~  │ *  │ [  │ {  │ (  │ #  │ ^  │ )  │ }  │ ]  │ $  │ _  │ +  │
+    └────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
+      `    1    2    3    4    5    6    7    8    9    0    -    =
+           ↓    ↓    ↓    ↓    ↓    ↓    ↓    ↓    ↓    ↓         
+           *    [    {    (    #    ^    )    }    ]    $         
+
+
+    With Shift:
+    ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+    │ ~  │ 1  │ 2  │ 3  │ 4  │ 5  │ 6  │ 7  │ 8  │ 9  │ 0  │ _  │ +  │
+    └────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
+         Shift+1 through Shift+0 = actual digits 0-9
+
+
+┌─────────────────────────────────────────────────────────────────────────┐
+│                      LETTER ROWS (Unchanged)                            │
+└─────────────────────────────────────────────────────────────────────────┘
+
+    ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+    │ Q  │ W  │ E  │ R  │ T  │ Y  │ U  │ I  │ O  │ P  │ &  │ !  │    │
+    └────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
+                                                         ↑    ↑
+                                                         [    ]
+                                                      becomes becomes
+                                                         &    !
+
+    ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+    │ A  │ S  │ D  │ F  │ G  │ H  │ J  │ K  │ L  │ ;  │ '  │    │
+    └────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
+
+    ┌────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┬────┐
+    │ Z  │ X  │ C  │ V  │ B  │ N  │ M  │ ,  │ .  │ /  │ %  │    │
+    └────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┴────┘
+                                                         ↑
+                                                         \
+                                                      becomes
+                                                         %
+
+    With Shift on backslash:  \ → % (no shift)  |  | → @ (with shift)
+
+
+================================================================================
+                         KEY MAPPING SUMMARY
+================================================================================
+
+SYMBOL ACCESS (No Shift Required!)
+────────────────────────────────────────────────────────────────────────────
+
+    Symmetrical Brackets - Opening (Left Hand):
+    ┌──────────┬──────────┬──────────┐
+    │   Key    │  Output  │  Finger  │
+    ├──────────┼──────────┼──────────┤
+    │    2     │    [     │  Ring    │
+    │    3     │    {     │  Middle  │
+    │    4     │    (     │  Index   │
+    └──────────┴──────────┴──────────┘
+
+    Symmetrical Brackets - Closing (Right Hand):
+    ┌──────────┬──────────┬──────────┐
+    │   Key    │  Output  │  Finger  │
+    ├──────────┼──────────┼──────────┤
+    │    7     │    )     │  Index   │
+    │    8     │    }     │  Middle  │
+    │    9     │    ]     │  Ring    │
+    └──────────┴──────────┴──────────┘
+
+    Other Symbols:
+    ┌──────────┬──────────┬────────────────────────┐
+    │   Key    │  Output  │      Description       │
+    ├──────────┼──────────┼────────────────────────┤
+    │    1     │    *     │  Asterisk              │
+    │    5     │    #     │  Hash/Pound            │
+    │    6     │    ^     │  Caret                 │
+    │    0     │    $     │  Dollar                │
+    │    \     │    %     │  Percent               │
+    │  Shift+\ │    @     │  At sign               │
+    │    [     │    &     │  Ampersand             │
+    │    ]     │    !     │  Exclamation           │
+    └──────────┴──────────┴────────────────────────┘
+
+
+NUMBERS (Shift Required)
+────────────────────────────────────────────────────────────────────────────
+
+    To type digits 0-9, hold SHIFT and press the number key:
+    
+    Shift + 1 = 1
+    Shift + 2 = 2
+    Shift + 3 = 3
+    Shift + 4 = 4
+    Shift + 5 = 5
+    Shift + 6 = 6
+    Shift + 7 = 7
+    Shift + 8 = 8
+    Shift + 9 = 9
+    Shift + 0 = 0
+
+
+================================================================================
+                         PROGRAMMING BENEFITS
+================================================================================
+
+✓ Symmetrical bracket placement - same finger on opposite hand
+  
+  Example: ( and ) both use index fingers
+           [ and ] both use ring fingers
+           { and } both use middle fingers
+
+✓ No SHIFT required for common programming symbols
+
+✓ Vim users: ^ and $ in logical positions
+  (^ = beginning of line, $ = end of line)
+
+✓ Optimized for programming over numeric input
+  (symbols used more frequently than digits in code)
+
+
+================================================================================
+                      SWITCHING BETWEEN LAYOUTS
+================================================================================
+
+GUI Method:
+  1. Click Karabiner-Elements menu bar icon
+  2. Click "Preferences..."
+  3. Go to "Profiles" tab
+  4. Select desired profile:
+     - "Default profile" = Standard QWERTY
+     - "Real Programmer's QWERTY" = This layout
+
+Command Line:
+  # Switch to Programmer's QWERTY
+  karabiner_cli --select-profile "Real Programmer's QWERTY"
+  
+  # Switch to standard QWERTY
+  karabiner_cli --select-profile "Default profile"
+  
+  # Check current profile
+  karabiner_cli --show-current-profile-name
+
+
+================================================================================
+                           QUICK REFERENCE
+================================================================================
+
+Most Common Programming Symbols:
+  
+  Parentheses:    4 = (    7 = )
+  Curly Braces:   3 = {    8 = }
+  Square Brackets: 2 = [    9 = ]
+  
+  Hash:      5 = #
+  Dollar:    0 = $
+  Asterisk:  1 = *
+  Caret:     6 = ^
+  
+  Percent:   \ = %
+  At sign:   Shift+\ = @
+  Ampersand: [ = &
+  Exclaim:   ] = !
+
+
+Configuration File Location:
+  ~/.config/karabiner/karabiner.json
+
+Layout Documentation:
+  ~/.config/karabiner/assets/complex_modifications/real-prog-qwerty-layout.txt
+
+
+================================================================================
+Source: https://github.com/renerocksai/real-prog-qwerty
+Adapted for Karabiner-Elements on macOS
+================================================================================
