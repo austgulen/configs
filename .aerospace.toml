@@ -13,12 +13,13 @@ gaps.outer.right = 5
 gaps.inner.horizontal = 5
 gaps.inner.vertical = 5
 
-# DEFAULT BINDINGS
-# AeroSpace uses 'alt' effectively. You can use 'cmd', but it conflicts with system.
-
 # 1. Open Terminal (Ghostty)
 # 'open -n' allows multiple instances
 mode.main.binding.alt-enter = 'exec-and-forget open -n -a "Ghostty"'
+# mode.main.binding.alt-b = 'exec-and-forget open -a "Firefox"'
+# mode.main.binding.alt-shift-b = 'exec-and-forget open -a "Firefox"'
+
+mode.main.binding.alt-b = 'exec-and-forget open -n -a "Firefox"'
 mode.main.binding.alt-q = 'close'
 
 # 2. Window Management
@@ -50,4 +51,3 @@ mode.main.binding.alt-shift-4 = 'move-node-to-workspace 4'
 
 # 5. Reload Config (Important for tweaking)
 mode.main.binding.alt-shift-r = 'reload-config'
-
