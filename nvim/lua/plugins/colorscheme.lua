@@ -13,38 +13,44 @@ return {
   { "miikanissi/modus-themes.nvim", priority = 1000 },
   { "bluz71/vim-moonfly-colors", name = "moonfly", lazy = false, priority = 1000 },
   { "Shatur/neovim-ayu" },
+  -- {
+  --   "jpwol/thorn.nvim",
+  --   lazy = false,
+  --   priority = 1000,
+  --   -- name = "thorn",
+  --   opts = {
+  --     theme = "dark", -- 'light' or 'dark' - defaults to vim.o.background if unset
+  --     background = "warm", -- options are 'warm' and 'cold'
+  --     styles = {
+  --       keywords = { italics = false, bold = true },
+  --       comments = { italics = true, bold = false },
+  --       strings = { italics = true, bold = false },
+  --
+  --       diagnostic = {
+  --         underline = true, -- if true, flat underlines will be used. Otherwise, undercurls will be used
+  --
+  --         -- true will apply the bg highlight, false applies the fg highlight
+  --         error = { highlight = true },
+  --         hint = { highlight = false },
+  --         info = { highlight = false },
+  --         warn = { highlight = false },
+  --       },
+  --     },
+  --
+  --     on_highlights = function(hl, c)
+  --       -- hl.LspInlayHint = { fg = c.fg, italic = true }
+  --       hl.LspInlayHint = { fg = c.gray, bg = "#1D282F", italic = true }
+  --       -- hl.LspInlayHint = { bg = c.bg, fg = c.fg }
+  --     end,
+  --
+  --     -- on_highlights = function(hl, palette) end, -- apply your own highlights
+  --   },
+  -- },
   {
     "jpwol/thorn.nvim",
     lazy = false,
     priority = 1000,
-    -- name = "thorn",
-    opts = {
-      theme = "dark", -- 'light' or 'dark' - defaults to vim.o.background if unset
-      background = "warm", -- options are 'warm' and 'cold'
-      styles = {
-        keywords = { italics = false, bold = true },
-        comments = { italics = true, bold = false },
-        strings = { italics = true, bold = false },
-
-        diagnostic = {
-          underline = true, -- if true, flat underlines will be used. Otherwise, undercurls will be used
-
-          -- true will apply the bg highlight, false applies the fg highlight
-          error = { highlight = true },
-          hint = { highlight = false },
-          info = { highlight = false },
-          warn = { highlight = false },
-        },
-      },
-
-      on_highlights = function(hl, c)
-        -- hl.LspInlayHint = { fg = c.fg, italic = true }
-        hl.LspInlayHint = { fg = c.gray, bg = "#1D282F", italic = true }
-        -- hl.LspInlayHint = { bg = c.bg, fg = c.fg }
-      end,
-
-      -- on_highlights = function(hl, palette) end, -- apply your own highlights
-    },
+    opts = {},
   },
 
   {
@@ -147,7 +153,6 @@ return {
     opts = {
       -- colorscheme = "naysayer",
       -- colorscheme = "matteblack",
-      colorscheme = "carbonfox",
       -- colorscheme = "bluloco",
       -- colorscheme = "solarized-osaka",
       -- colorscheme = "cyberdream",
@@ -155,7 +160,8 @@ return {
       -- colorscheme = "moonfly",
       -- colorscheme = "rose-pine-moon",
       -- colorscheme = "terafox",
-      -- colorscheme = "thorn",
+      colorscheme = "thorn",
+      -- colorscheme = "carbonfox",
     },
   },
   -- {

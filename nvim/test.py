@@ -21,7 +21,5 @@ def foo(x: int):
     return x - y
 
 
-
-
-
-if __name__ == '__main__':  # aksijdak sdlkajs lkajsldka sldkas jldkaj dlaksjdlakssasas ssdasdsasddaa
+if __name__ == '__main__':  # aksijdak sdlkajs lkajsldka sldkas jldkaj d
+    print('hello')

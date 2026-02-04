@@ -25,7 +25,7 @@ vim.g.autoformat = true -- turn on format-on-save
 
 -- Languages
 vim.g.lazyvim_cmp = "nvim-cmp"
-vim.g.lazyvim_python_lsp = "basedpyright"
+--vim.g.lazyvim_python_lsp = "basedpyright"
 -- vim.keymap.set("n", "K", vim.lsp.buf.hover, { buffer = 0 })
 vim.keymap.set("n", "K", function()
   vim.lsp.buf.hover({ border = "rounded", max_height = 25, max_width = 120 }) -- Change "single" to your desired border style
