@@ -1,7 +1,0 @@
-[tool.ruff]
-# Extend the `pyproject.toml` file in the parent directory...
-extend = "~/.config/ruff/ruff.toml"
-
-
-[tool.ruff.format]
-quote-style = "single"

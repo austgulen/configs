@@ -12,35 +12,50 @@ return {
           },
         },
       },
-      -- https://docs.basedpyright.com/latest/
-      basedpyright = {
+      ty = {
+        -- ty is fast by default (Rust-powered), so we don't need
+        -- as many "speed" overrides as basedpyright.
         settings = {
-          basedpyright = {
-            analysis = {
-              -- ---- Speed & Scope ─────
-              diagnosticMode = "openFilesOnly", -- Only current file (fast)
-              typeCheckingMode = "basic", -- Basic errors only
-              -- useLibraryCodeForTypes = false, -- Skip library analysis
-              autoSearchPaths = false, -- No auto-dir scanning
-              -- extraPaths = { "src" }, -- Default source dirs (adjust globally)
-
-              -- ---- Features ─────
-              disableOrganizeImports = true, -- Use Ruff for imports
-
-              -- ---- Diagnostic Overrides (global fallbacks) ─────
-              diagnosticSeverityOverrides = {
-                reportUnknownVariableType = "none",
-                reportUnknownParameterType = "none",
-                reportMissingTypeAnnotation = "none",
-                reportGeneralTypeIssues = "none",
-                reportMissingTypeStubs = "none",
-                reportUnusedImport = "info", -- Keep as warning
-              },
+          ty = {
+            diagnosticMode = "workspace", --"openFilesOnly", -- Fast feedback
+            typeCheckingMode = "standard", -- Not too annoying
+            inlayHints = {
+              variableTypes = true, -- See types as you type
             },
-            configurationPreference = "preferConfigFiles", -- Prioritize pyproject.toml
           },
         },
       },
+      basedpyright = { enabled = false },
+      pyright = { enabled = false },
+      -- https://docs.basedpyright.com/latest/
+      -- basedpyright = {
+      --   settings = {
+      --     basedpyright = {
+      --       analysis = {
+      --         -- ---- Speed & Scope ─────
+      --         diagnosticMode = "openFilesOnly", -- Only current file (fast)
+      --         typeCheckingMode = "basic", -- Basic errors only
+      --         -- useLibraryCodeForTypes = false, -- Skip library analysis
+      --         autoSearchPaths = false, -- No auto-dir scanning
+      --         -- extraPaths = { "src" }, -- Default source dirs (adjust globally)
+      --
+      --         -- ---- Features ─────
+      --         disableOrganizeImports = true, -- Use Ruff for imports
+      --
+      --         -- ---- Diagnostic Overrides (global fallbacks) ─────
+      --         diagnosticSeverityOverrides = {
+      --           reportUnknownVariableType = "none",
+      --           reportUnknownParameterType = "none",
+      --           reportMissingTypeAnnotation = "none",
+      --           reportGeneralTypeIssues = "none",
+      --           reportMissingTypeStubs = "none",
+      --           reportUnusedImport = "info", -- Keep as warning
+      --         },
+      --       },
+      --       configurationPreference = "preferConfigFiles", -- Prioritize pyproject.toml
+      --     },
+      --   },
+      -- },
 
       -- basedpyright = {
       --   settings = {
