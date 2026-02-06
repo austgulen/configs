@@ -1,12 +1,13 @@
 # --- Powerlevel10k Instant Prompt ---
+export ZSH="$HOME/.oh-my-zsh"
+
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
 # --- Oh My Zsh Setup ---
-export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="powerlevel10k/powerlevel10k"
-
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#586e75" # Solarized gray
 plugins=(
   git
   zoxide
@@ -34,10 +35,14 @@ setopt share_history      # Share history across sessions
 setopt inc_append_history # Append commands immediately
 
 # Aliases
-alias ls='ls --color=auto'
+# alias ls='ls --color=auto'
 alias vim='nvim'
-alias ll='ls -lh --color=auto'
-alias la='ls -lha --color=auto'
+# alias ll='ls -lh --color=auto'
+# alias la='ls -lha --color=auto'
+alias ls='eza --icons --group-directories-first'
+alias ll='eza -lh --icons --git --group-directories-first'
+alias la='eza -lha --icons --git --group-directories-first'
+# alias lt='eza --tree --level=2 --icons' # Quick tree view
 alias update='sudo pacman -Syu'
 alias install='sudo pacman -S'
 alias rm='rm -i'
@@ -46,7 +51,10 @@ alias mv='mv -i'
 alias src='source ~/.zshrc'
 alias ezsh='nvim ~/.zshrc'
 alias rgi='rg --ignore-case --line-number --no-heading | fzf --ansi --preview "bat --style=numbers --color=always --line-range :500 {1}"'
-
+lt() {
+  local depth=${1:-2} # Set depth to $1, or default to 2 if $1 is empty
+  eza --tree --level="$depth" --icons --group-directories-first "${@:2}"
+}
 # --- Prompt Customization ---
 # Powerlevel10k loads its config from ~/.p10k.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
