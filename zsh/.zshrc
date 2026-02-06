@@ -84,3 +84,5 @@ fzf_history_widget() {
 zle -N fzf_history_widget
 bindkey '^R' fzf_history_widget
 
+alias python="python3"
+alias pip="pip3"

@@ -1,4 +1,5 @@
 # ~/.aerospace.toml
+# https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 
 # Start AeroSpace at login
 start-at-login = true
@@ -39,10 +40,16 @@ mode.main.binding.alt-shift-t = 'layout floating tiling'     # Toggle floating
 mode.main.binding.alt-f = 'fullscreen'
 
 # 4. Workspaces
+
+
 mode.main.binding.alt-1 = 'workspace 1'
 mode.main.binding.alt-2 = 'workspace 2'
 mode.main.binding.alt-3 = 'workspace 3'
 mode.main.binding.alt-4 = 'workspace 4'
+mode.main.binding.alt-5 = 'workspace 5'
+mode.main.binding.alt-6 = 'workspace 6'
+mode.main.binding.alt-7 = 'workspace 7'
+mode.main.binding.alt-8 = 'workspace 8'
 
 mode.main.binding.alt-shift-1 = 'move-node-to-workspace 1'
 mode.main.binding.alt-shift-2 = 'move-node-to-workspace 2'
@@ -51,3 +58,16 @@ mode.main.binding.alt-shift-4 = 'move-node-to-workspace 4'
 
 # 5. Reload Config (Important for tweaking)
 mode.main.binding.alt-shift-r = 'reload-config'
+
+# -1. map to monitor
+# --- DYNAMIC MONITOR MAPPING ---
+[workspace-to-monitor-force-assignment]
+1 = ['DELL P2422H', 'secondary', 'main']
+2 = ['DELL P2422H', 'secondary', 'main']
+3 = ['DELL P2422H', 'secondary', 'main']
+4 = ['DELL P2422H', 'secondary', 'main']
+
+5 = ['Built-in Retina Display', 'main']
+6 = ['Built-in Retina Display', 'main']
+7 = ['Built-in Retina Display', 'main']
+8 = ['Built-in Retina Display', 'main']
