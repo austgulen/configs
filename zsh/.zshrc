@@ -1,5 +1,6 @@
 # --- Powerlevel10k Instant Prompt ---
 export ZSH="$HOME/.oh-my-zsh"
+#export PATH="$HOME/.cargo/env"
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -91,4 +92,13 @@ fzf_history_widget() {
 }
 zle -N fzf_history_widget
 bindkey '^R' fzf_history_widget
+export PATH="$HOME/.cargo/bin:$PATH"
 
+# >>> juliaup initialize >>>
+
+# !! Contents within this block are managed by juliaup !!
+
+path=('/Users/kaust/.juliaup/bin' $path)
+export PATH
+
+# <<< juliaup initialize <<<
