@@ -1,6 +1,4 @@
-# --- Powerlevel10k Instant Prompt ---
 export ZSH="$HOME/.oh-my-zsh"
-#export PATH="$HOME/.cargo/env"
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -24,7 +22,6 @@ source $ZSH/oh-my-zsh.sh
 
 # --- Custom Configuration ---
 
-# Zoxide smart cd
 eval "$(zoxide init --cmd cd zsh)"
 
 # History settings
@@ -67,24 +64,18 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'r:|[._-]=* r:|=*'
 compinit
 
-# Less typing: edit command line in $EDITOR
 autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey '^X^E' edit-command-line
 
 
-# --- fzf-tab configuration ---
-# Use fzf for completion menus
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}' 'r:|[._-]=* r:|=*'
 
-# --- History substring search ---
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
 
-# --- Fuzzy history search with fzf ---
-# Ctrl+R will open an interactive fzf menu over shell history.
 fzf_history_widget() {
   BUFFER=$(history -n 1 | tac | fzf --tac --no-sort --ansi --height 40% --reverse --query="$LBUFFER" --preview 'echo {}' )
   CURSOR=$#BUFFER
