@@ -42,7 +42,8 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 
-font-family = Terminess Nerd Font Mono
+font-family = "JetBrains Mono"
+#font-family = Terminess Nerd Font Mono
 #font-family = Fira Code
 font-thicken = true
 font-size = 16
