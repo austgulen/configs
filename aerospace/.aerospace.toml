@@ -4,7 +4,6 @@
 # Start AeroSpace at login
 start-at-login = true
 
-# GAPS (The Hyprland Look)
 # Outer gaps
 gaps.outer.left = 5
 gaps.outer.bottom = 5
