@@ -87,3 +87,10 @@ bindkey '^R' fzf_history_widget
 
 alias python="python3"
 alias pip="pip3"
+
+# lookup:
+# > ncdu  :
+#   NCurses Disk Usage - usefull to find and delete large files (like old models)
+# > rg  :
+#   RipGrap - a faster grep. Usefull for finding contents of files, 
+#             when we do not know where the files are.
