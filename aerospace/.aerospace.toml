@@ -1,5 +1,4 @@
 # ~/.aerospace.toml
-# https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 
 # Start AeroSpace at login
 start-at-login = true
@@ -9,21 +8,16 @@ gaps.outer.left = 5
 gaps.outer.bottom = 5
 gaps.outer.top = 5
 gaps.outer.right = 5
-# Inner gaps (between windows)
+# Inner gaps
 gaps.inner.horizontal = 5
 gaps.inner.vertical = 5
 
-# 1. Open Terminal (Ghostty)
-# 'open -n' allows multiple instances
-mode.main.binding.alt-enter = 'exec-and-forget open -n -a "Ghostty"'
-# mode.main.binding.alt-b = 'exec-and-forget open -a "Firefox"'
-# mode.main.binding.alt-shift-b = 'exec-and-forget open -a "Firefox"'
 
 # bindings
 [mode.main.binding]
 alt-enter = 'exec-and-forget open -n -a "Ghostty"'
 alt-b = 'exec-and-forget open -n -a "Firefox"'
-alt-q = 'close --quit-if-last-window'
+alt-q = 'close'
 alt-h = 'focus left'
 alt-j = 'focus down'
 alt-k = 'focus up'
@@ -53,38 +47,6 @@ alt-shift-6 = 'move-node-to-workspace 6'
 alt-shift-7 = 'move-node-to-workspace 7'
 alt-shift-8 = 'move-node-to-workspace 8'
 
-mode.main.binding.alt-shift-h = 'move left'
-mode.main.binding.alt-shift-j = 'move down'
-mode.main.binding.alt-shift-k = 'move up'
-mode.main.binding.alt-shift-l = 'move right'
-
-# 3. Layouts
-mode.main.binding.alt-t = 'layout tiles horizontal vertical' # Toggle tiling orientation
-mode.main.binding.alt-shift-t = 'layout floating tiling'     # Toggle floating
-mode.main.binding.alt-f = 'fullscreen'
-
-# 4. Workspaces
-
-
-mode.main.binding.alt-1 = 'workspace 1'
-mode.main.binding.alt-2 = 'workspace 2'
-mode.main.binding.alt-3 = 'workspace 3'
-mode.main.binding.alt-4 = 'workspace 4'
-mode.main.binding.alt-5 = 'workspace 5'
-mode.main.binding.alt-6 = 'workspace 6'
-mode.main.binding.alt-7 = 'workspace 7'
-mode.main.binding.alt-8 = 'workspace 8'
-
-mode.main.binding.alt-shift-1 = 'move-node-to-workspace 1'
-mode.main.binding.alt-shift-2 = 'move-node-to-workspace 2'
-mode.main.binding.alt-shift-3 = 'move-node-to-workspace 3'
-mode.main.binding.alt-shift-4 = 'move-node-to-workspace 4'
-
-# 5. Reload Config (Important for tweaking)
-mode.main.binding.alt-shift-r = 'reload-config'
-
-# -1. map to monitor
-# --- DYNAMIC MONITOR MAPPING ---
 [workspace-to-monitor-force-assignment]
 1 = ['DELL P2422H', 'secondary', 'main']
 2 = ['DELL P2422H', 'secondary', 'main']
