@@ -90,4 +90,4 @@ macos-option-as-alt = true
 
 # This ensures the terminal fills the entire AeroSpace tile
 window-step-resize = true
-
+window-save-state = never
